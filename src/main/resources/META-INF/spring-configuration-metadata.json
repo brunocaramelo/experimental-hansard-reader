@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "topics.input.run-hansard-update",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "topics.output.downloadable-file",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "external-api.hansard.uri",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "external-api.hansard.feed.path",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "external-api.hansard.feed.dataset",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "external-api.hansard.feed.take",
+      "type": "java.lang.String"
+    }
+  ]
+}

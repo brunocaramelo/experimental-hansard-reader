@@ -1,0 +1,4 @@
+external-api:
+  hansard:
+    feed:
+      take: all

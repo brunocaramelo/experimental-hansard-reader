@@ -1,0 +1,47 @@
+server:
+  port: 10000
+
+topics:
+  input:
+    run-hansard-update: message.scheduler.run-hansard-update
+  output:
+    downloadable-file: message.hansard-reader.downloadable-file
+
+external-api:
+  hansard:
+    uri: http://api.data.parliament.uk
+    feed:
+      path: /resources/files/feed
+      dataset: 12
+      take: 5 # number of days to consume from or <all> to read everything (from the last 5 years).
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hansard_reader
+    username: postgres
+    password: password
+  flyway:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: hansard-reader
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        specific:
+          avro:
+            reader: true
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    listener:
+      missing-topics-fatal: false
+    properties:
+      schema:
+        registry:
+          url: http://localhost:8081

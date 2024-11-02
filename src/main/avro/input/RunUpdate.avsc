@@ -1,0 +1,12 @@
+{
+  "namespace": "com.bgasparotto.scheduler.message",
+  "type": "record",
+  "name": "RunUpdate",
+  "fields": [
+    {
+      "name": "description",
+      "type": "string",
+      "avro.java.string": "String"
+    }
+  ]
+}

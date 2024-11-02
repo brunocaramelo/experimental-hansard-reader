@@ -1,0 +1,24 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="text">Data.Parliament Resource File Feed</title>
+    <id>http://api.data.parliament.uk/resources/files/feed</id>
+    <updated>2019-12-10T13:46:35Z</updated>
+    <link rel="self" href="http://data.parliament.uk/feed"/>
+    <entry>
+        <id>http://api.data.parliament.uk/resources/files/1167963.zip</id>
+        <title type="text">Data.Parliament Resource File 1167963 - zip</title>
+        <updated>2019-12-09T16:17:21Z</updated>
+        <author>
+            <name>Data.Parliament</name>
+        </author>
+        <link href="http://api.data.parliament.uk/resources/files/1167963.zip"/>
+    </entry>
+    <entry>
+        <id>http://api.data.parliament.uk/resources/files/1167958.zip</id>
+        <title type="text">Data.Parliament Resource File 1167958 - zip</title>
+        <updated>2019-11-06T01:24:34Z</updated>
+        <author>
+            <name>Data.Parliament</name>
+        </author>
+        <link href="http://api.data.parliament.uk/resources/files/1167958.zip"/>
+    </entry>
+</feed>
