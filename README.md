@@ -5,7 +5,7 @@ publishing the results on Apache Kafka, to later be processed by Apache Spark dr
 ## Running the service
 Run docker-compose:
 ```shell script
-git clone https://github.com/bgasparotto-engineering/hansard-reader
+git clone https://github.com/brunocaramelo-engineering/hansard-reader
 cd hansard-reader
 docker-compose up -d
 ```

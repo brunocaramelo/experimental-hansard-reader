@@ -6,7 +6,7 @@ plugins {
     id 'idea'
 }
 
-group = 'com.bgasparotto'
+group = 'com.brunocaramelo'
 version = '0.0.1-SNAPSHOT'
 
 project.sourceCompatibility = '11'
@@ -51,7 +51,7 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
-    testImplementation 'com.bgasparotto:spring-kafka-avro-test:1.0.3'
+    testImplementation 'com.brunocaramelo:spring-kafka-avro-test:1.0.3'
 }
 
 test {

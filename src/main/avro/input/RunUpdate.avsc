@@ -1,5 +1,5 @@
 {
-  "namespace": "com.bgasparotto.scheduler.message",
+  "namespace": "com.brunocaramelo.scheduler.message",
   "type": "record",
   "name": "RunUpdate",
   "fields": [
